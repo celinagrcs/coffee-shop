@@ -1,2 +1,2 @@
 # coffee-shop
-Mi primera pagina con css y html
+Mi primera pagina con CSS y HTML
