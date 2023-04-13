@@ -1,0 +1,124 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --black: #333030;
+    --color2: #f1da73; 
+    --color5: #cf6f44;
+}
+
+#check, .menu{
+    display: none;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0; 
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 80%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo .dot{
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background: var(--color2);
+    margin: 0.2rem;
+}
+
+.nav-links{
+    display: flex; 
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+}
+
+.nav-links a:last-child{
+    margin: 0rem;
+}
+
+a:hover{
+    color: var(--color2);
+}
+
+.nav-links a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--color2);
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar{
+    width: 12px; 
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #f1da73;
+}
+::-webkit-scrollbar-track{
+    background: #cf6f44;
+}
+/* Hero Section */
+.hero{
+   background-image: url(pexels-maria-orlova-4946715.jpg);
+   background-position: center;
+   background-size: cover;
+   padding: 5rem 10% 0rem 10%;
+   position: relative;
+   overflow: hidden;
+   color: white;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+}
+
+
+.hero .intro h1{
+   font-size: 50px;
+}
+
+button{
+    top: 10px;
+    background-color: #f1da73;
+    box-shadow: none;
+    border: 2px solid #f1da73;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 10px;
+    
+}
+
+
+ 
